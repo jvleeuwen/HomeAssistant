@@ -1,0 +1,13 @@
+# Sends a notification every day at 7 am if the value is different then 'Geen'.
+  - alias: 'Kliko reminder'
+    trigger:
+      - platform: time
+        at: "07:30:00"
+    condition:
+        condition: template
+        value_template: "{{ not is_state('sensor.afval_vandaag', 'Geen') }}"
+    action:
+      - service: notify.notify
+        data_template:
+          title: 'Kliko aan de weg'
+          message: "Vandaag wordt de {{ states('sensor.afval_vandaag') }} container geledigd."
