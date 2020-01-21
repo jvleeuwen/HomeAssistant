@@ -1,4 +1,4 @@
-# Sends a notification every day at 7 am if the value is different then 'Geen'.
+# Sends a notification every day at 7 am if the value is different than 'Geen'.
   - alias: 'Kliko reminder'
     trigger:
       - platform: time
