@@ -9,4 +9,4 @@ custom_header:
         user: Peter Boer
       config:
         show_tabs: 'a, b, c, d, e' #namen van je lovelace views
-        default_tab: 'a' #naam van de lovelace view
+        default_tab: 'a' #naam van de lovelace view.
