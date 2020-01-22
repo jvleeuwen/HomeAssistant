@@ -1,0 +1,12 @@
+custom_header:
+  compact_mode: true
+  background: rgba(155, 155, 155, 0.25)
+  clock_format: 24
+  hide_tabs: ahome #deze verbergt een tab voor IEDEREEN
+  #Bij Exceptions kun je per user aangeven welke tabs wel en niet getoond moeten worden en kun je ook de default_tab opgeven
+  exceptions:
+    - conditions:
+        user: Peter Boer
+      config:
+        show_tabs: 'a, b, c, d, e' #namen van je lovelace views
+        default_tab: 'a' #naam van de lovelace view
