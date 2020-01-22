@@ -1,0 +1,6 @@
+# GPS coordinates of KPN/RoutIT
+  - name: RoutIT
+    latitude: 52.024707
+    longitude: 5.617206
+    radius: 50                  # in Meters
+    icon: mdi:office-building
